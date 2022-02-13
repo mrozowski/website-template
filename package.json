@@ -1,0 +1,34 @@
+{
+  "name": "kdbts",
+  "version": "1.0.0",
+  "description": "knowladgeDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "predeploy": "rm -rf dist && parcel build public/index.html --public-url .",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrozowski/knowledgeBase.git"
+  },
+  "keywords": [
+    "knowladge"
+  ],
+  "author": "smrozowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrozowski/knowledgeBase/issues"
+  },
+  "homepage": "http://mrozowski.github.io/knowledgeBase",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "firebase": "^9.6.6",
+    "lit": "^2.1.3"
+  }
+}
